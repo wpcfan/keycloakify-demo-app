@@ -8,6 +8,6 @@ export const MyExtraPage2 = memo(({ kcContext, ...props }: { kcContext: KcContex
 
     console.log(`TODO: Do something with: ${kcContext.someCustomValue}`);
 
-    return <>It is up to you to implement this page</>
+    return <p>It is up to you to implement this page</p>
 
 });
