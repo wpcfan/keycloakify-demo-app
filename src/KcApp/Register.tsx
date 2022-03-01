@@ -27,8 +27,6 @@ export const Register = memo(({ kcContext, ...props }: { kcContext: KcContext_Re
 
     const { cx } = useCssAndCx();
 
-    console.log(`TODO: Do something with ${kcContext.authorizedMailDomains}`);
-
     return (
         <Template
             {...{ kcContext, ...props }}

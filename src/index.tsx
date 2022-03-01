@@ -1,12 +1,9 @@
 import ReactDOM from "react-dom";
-import { App } from "./App";
 import { kcContext } from "./KcApp/kcContext";
-import { KcApp } from "./KcApp";
+import { KcWrapper } from "./KcApp";
 import "./index.scss";
 
 ReactDOM.render(
-  kcContext === undefined ?
-    <App /> :
-    <KcApp kcContext={kcContext} />,
+  <KcWrapper kcContext={kcContext!} />,
   document.getElementById("root")
 );
