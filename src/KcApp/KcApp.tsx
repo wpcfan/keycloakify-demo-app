@@ -11,8 +11,6 @@ import { MyExtraPage2 } from "./MyExtraPage2";
 import { KcApp as KcAppBase } from "keycloakify/lib/components/KcApp";
 import "./kcMessagesExtension";
 
-const paddingTop = "60px";
-
 export const KcApp = memo(({ kcContext }: { kcContext: KcContext; }) => {
     switch (kcContext.pageId) {
         case "login.ftl": return <Login {...{ kcContext, ...props }} />;
@@ -27,7 +25,7 @@ export const KcApp = memo(({ kcContext }: { kcContext: KcContext; }) => {
 });
 
 export const KcWrapper = ({ kcContext }: { kcContext: KcContext; }) => (
-    <div className="app-container" style={{ paddingTop }}>
+    <div className="app-container">
         <KcApp kcContext={kcContext} />
     </div>
 ) 

@@ -32,6 +32,9 @@ export const { kcContext } = getKcContext<
         },
         {
             "pageId": "register.ftl",
+            "realm": {
+                "displayNameHtml": "<div>hello</div>",
+            },
             "authorizedMailDomains": [
                 "example.com",
                 "another-example.com",
